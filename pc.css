@@ -38,7 +38,6 @@ main {
 
 footer{
     width:100%;
-    height:500px;
 }
 
 /*header*/
@@ -306,16 +305,26 @@ header nav ul > li:nth-child(3) {
 }
 
 .con_hd{
-    font-size:2.1rem;/*42px*/
+    font-size:2.1rem;
     font-weight: 800;
     text-align: center;
+    color:#000;
+}
+
+.con_hd_white{
+    color:#fff;
+    font-weight: 600;
 }
 
 .con_pg{
-    font-size:1rem
-    ;color:#444;
+    font-size:1rem;
+    color:#444;
     text-align: center;
     padding:1.8rem 0 3rem;
+}
+
+.pdsmall/*con_pg 중 padding 값이 작은 클래스들*/{
+    padding:.5rem 0 1.8rem;
 }
 
 .con1 ul:first-child{
@@ -551,35 +560,61 @@ figcaption{
     display: block;
     width:12rem;
     height:10rem;
-    font-weight:900;text-align: center;
+    font-weight:400;
+    text-align: center;
     padding:2.5rem 0;
     box-sizing: border-box;
 }
 
-.con6 li a span{display: block;}
+.con6 li a span{
+    display: block;
+}
 
 .c6:before{
     content:"";
     display:inline-block;
     width:30px;
     height:30px;
+}
+
+.con6 li:first-child .c6:before{
     background:url(images/icon_global1.png)no-repeat 0 50%;
 }
 
+.con6 li:first-child:hover .c6:before{
+    background:url(images/icon_global1_on.png)no-repeat 0 50%;
+}
+
 .con6 li:nth-child(2) .c6:before{
-    background-image:url(images/icon_global2.png);
+    background:url(images/icon_global2.png)no-repeat 0 50%;
+}
+
+.con6 li:nth-child(2):hover .c6:before{
+    background:url(images/icon_global2_on.png)no-repeat 0 50%;
 }
 
 .con6 li:nth-child(3) .c6:before{
-    background-image:url(images/icon_global3.png);
+    background:url(images/icon_global3.png)no-repeat 0 50%;
+}
+
+.con6 li:nth-child(3):hover .c6:before{
+    background:url(images/icon_global3_on.png)no-repeat 0 50%;
 }
 
 .con6 li:nth-child(4) .c6:before{
-    background-image:url(images/icon_global4.png);
+    background:url(images/icon_global4.png)no-repeat 0 50%;
+}
+
+.con6 li:nth-child(4):hover .c6:before{
+    background:url(images/icon_global4_on.png)no-repeat 0 50%;
 }
 
 .con6 li:nth-child(5) .c6:before{
-    background-image:url(images/icon_global5.png);
+    background:url(images/icon_global5.png)no-repeat 0 50%;
+}
+
+.con6 li:nth-child(5):hover .c6:before{
+    background:url(images/icon_global5_on.png)no-repeat 0 50%;
 }
 
 .con6 li a:hover {
@@ -590,9 +625,6 @@ figcaption{
     color:#fff;
 }
 
-.con6 li a:hover .c6:before{
-    background-image:url(images/icon_global1_on.png);
-}
 
 .con7{
     background:url(images/bg_mCustomer.jpg) no-repeat 0 0 fixed;
@@ -621,8 +653,8 @@ figcaption{
 footer{
     padding:20px 0;
     background: #353736;
-    font-size:.65rem;/*13px;*/
-    height:5rem;
+    font-size:.65rem;
+    height:6rem;
 }
 
 footer a{
@@ -668,21 +700,26 @@ footer ul{
     position:absolute;
     top:35px;
     right:0;
-    border:1px solid #555;
     width:8rem;
     height:1.8rem;
     box-sizing: border-box;
     background:url(images/icon_arrow2.png) no-repeat 90% 50%;
+    text-indent:10px;
 }
 
 .dropdown a{
+    border:1px solid #555;
     display:block;
     width:8rem;
     height:1.8rem;
     line-height:1.8rem;
 }
 
-footer address{
+.dropdown a:nth-child(2){
+    display:none;
+}
+
+footer .address{
     position: absolute;
     top:0;
     left:0;

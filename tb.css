@@ -5,6 +5,8 @@ html{
 body{
     font-size:1rem;
     background:#fff;
+    min-width: 60rem;
+    overflow-x:hidden;
 }
 
 .pc{
@@ -615,23 +617,46 @@ figcaption{
     display:inline-block;
     width:30px;
     height:30px;
+}
+
+.con6 li:first-child .c6:before{
+    background:url(images/icon_global1.png)no-repeat 0 50%;
+}
+
+.con6 li:first-child:hover .c6:before{
     background:url(images/icon_global1.png)no-repeat 0 50%;
 }
 
 .con6 li:nth-child(2) .c6:before{
-    background-image:url(images/icon_global2.png);
+    background:url(images/icon_global2.png)no-repeat 0 50%;
+}
+
+.con6 li:nth-child(2):hover .c6:before{
+    background:url(images/icon_global2.png)no-repeat 0 50%;
 }
 
 .con6 li:nth-child(3) .c6:before{
-    background-image:url(images/icon_global3.png);
+    background:url(images/icon_global3.png)no-repeat 0 50%;
+}
+
+.con6 li:nth-child(3):hover .c6:before{
+    background:url(images/icon_global3.png)no-repeat 0 50%;
 }
 
 .con6 li:nth-child(4) .c6:before{
-    background-image:url(images/icon_global4.png);
+    background:url(images/icon_global4.png)no-repeat 0 50%;
+}
+
+.con6 li:nth-child(4):hover .c6:before{
+    background:url(images/icon_global4.png)no-repeat 0 50%;
 }
 
 .con6 li:nth-child(5) .c6:before{
-    background-image:url(images/icon_global5.png);
+    background:url(images/icon_global5.png)no-repeat 0 50%;
+}
+
+.con6 li:nth-child(5):hover .c6:before{
+    background:url(images/icon_global5.png)no-repeat 0 50%;
 }
 
 .con6 li a:hover {
@@ -644,10 +669,6 @@ figcaption{
 
 .con6 li a:hover .c6Text{
     color:#000;
-}
-
-.con6 li a:hover .c6:before{
-    background-image:url(images/icon_global1.png);
 }
  
 /*con7*/
@@ -665,15 +686,79 @@ figcaption{
     -webkit-background-size: 50%;
     background-size:50% ;
 }
+
 /*footer*/
+footer{
+    padding:40px;
+    box-sizing: border-box;
+    min-width: 60rem;
+    height:auto;
+}
 
 
+footer .inner{
+    position: relative;
+}
 
+.link2, address > p > small > img{
+    display: none;
+}
 
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
 
+.dropdown{
+    width:100%;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    background:url(images/icon_arrow2.png) no-repeat 100% 60%;
+    cursor: pointer;
+    font-size:.875rem;
+}
 
+.dropdown a{
+    border:1px solid #555;
+    display: block;
+    width:100%;
+    text-indent:10px;
+    padding:.4rem;
+}
 
+.dropdown a:nth-child(2){
+    display:none;
+}
 
+.sns6{
+    width:100%;
+}
+
+.sns6 li{
+    margin:40px 0 0 15px;
+}
+
+.sns6 li a{
+    width:1.875rem;
+    height:1.875rem;
+
+}
+
+footer .address{
+    font-size:.75rem;
+    position: initial;
+    width:100%;
+    margin:20px auto 0;
+    text-align: center;
+}
+
+footer p small{
+    font-size:.4375rem;
+}
 
 
 
