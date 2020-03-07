@@ -16,31 +16,23 @@ body{
 }
 
 header{
-    width:100%;
+    position: fixed;
     height:3.125rem;
     padding:0.625rem;
     border-bottom:1px solid #ddd;
 }
 
 .inner{
-    width:100%;/*width:1200px 1200/20= 60rem; */
+    width:100%;
     margin:0;   
 }
-
-main{
-    width:100%;
-}
-
-footer{
-    width:100%;
-}
-
 /*로고*/
 
 .logo{
-    top:45%;
+    top:50%;
     left:50%;
-    transform:translate(-45%,-50%);
+    transform:translate(-50%,-50%);
+    outline:1px solid red;
 }
 
 .logo img{
@@ -706,7 +698,6 @@ figcaption{
 footer{
     padding:40px;
     box-sizing: border-box;
-    min-width: 60rem;
     height:auto;
 }
 
