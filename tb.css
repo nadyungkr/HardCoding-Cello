@@ -252,7 +252,8 @@ header nav ul > li:nth-child(3) {
     display:none;
 }
 
-.pager{position: relative;
+.pager{
+    position: relative;
     left:50%;
     bottom:2rem;
     margin-left:-1.5rem;
@@ -261,7 +262,7 @@ header nav ul > li:nth-child(3) {
 
 .pager li{
     float:left;
-    margin-right: 10px;
+    margin-right:10px;
 }
 
 .pager li a{
@@ -279,7 +280,7 @@ header nav ul > li:nth-child(3) {
 
 .pager .active a:before{
     background:#fff;
-    }
+}
 
 /*정지,재생버튼*/
 .pau a:before{
@@ -336,8 +337,9 @@ header nav ul > li:nth-child(3) {
 }
 
 .con_pg{
-    font-size:1rem;
+    font-size:.8125rem;
     text-align: center;
+    padding:1rem 0 1.25rem;
 }
 
 .content1{
@@ -352,7 +354,7 @@ header nav ul > li:nth-child(3) {
     display:flex;
 }
 
-.content1 > ul > li{
+.content1 ul:first-child li{
     width:49.9%;
     height:100%;
     position: relative;
@@ -378,29 +380,11 @@ header nav ul > li:nth-child(3) {
     font-size:.9rem;
 }
 
-.pager2,.pager3{
-    position:absolute;
-    bottom:1rem;
-    left:50%;    
-    transform:translateX(-50%);
-    display:flex;
-}
-.pager2 .num a:before,.pager3 .num a:before{
-    content:"";
-    display:inline-block;
-    width:10px;height:10px;
-    border:1px solid #ccc;
-    border-radius:14px;
-}
-
-.pager2 .active a:before,.pager3 .active a:before{
-    background:#0f5431;
-}
-
 .con2{
     background: #f5f5f5;
     width:100%;
-    margin-top:0;}
+    margin-top:0;
+}
 
 .con2 ul{
     flex-wrap: wrap
@@ -500,10 +484,34 @@ figcaption{
     display:none;
 }
 
-.con3 .pager3{
-    display:flex;
-    box-shadow: 0;
+.con3 .pager3, .con2 .pager2{
+    display: flex;
 }
+
+.pager2,.pager3{
+    position:absolute;
+    bottom:1rem;
+    left:50%;    
+    transform:translateX(-50%);
+}
+
+.pager2 li,.pager3 li{
+    padding:0 10px;
+}
+
+.pager2 .num a:before,.pager3 .num a:before{
+    content:"";
+    display:inline-block;
+    width:10px;height:10px;
+    border:1px solid #ccc;
+    border-radius:14px;
+}
+
+.pager2 .active a:before,.pager3 .active a:before{
+    background:#0f5431;
+}
+
+
 
 /*sns*/
 .con4{
@@ -515,14 +523,14 @@ figcaption{
     justify-content: center;
 }
 
-.alignc li{            
-    margin:0;
+.con4 .alignc li{
+    margin:0 1%;
 }
 
 .alignc li img{
     display:block;
-    width:4.8rem;
-    height:4.8rem;
+    width:12rem;
+    height:12rem;
 }
     
 /*뉴스& 이벤트*/
@@ -568,10 +576,12 @@ figcaption{
 .con5 .alignc p a{
     display:block;
     width:100%;
-    letter-spacing: 1px;
     margin:20px 0 11px;
     box-sizing:border-box;
     word-break:keep-all;
+    font-weight:400;
+    letter-spacing: 0;
+    color:#000;
 }
 
 .con5 .alignc p:last-child{
@@ -677,12 +687,11 @@ figcaption{
 }
 
 .touch:after{
-    content:"";
+    content:"\e93f";
+    font-family: xeicon;
     display: inline-block;
-    background:url(images/icon_arrow2.png) no-repeat right center;
     width: 8px;
     height: 12px;
-    padding-left:10px;
     -webkit-background-size: 50%;
     background-size:50% ;
 }

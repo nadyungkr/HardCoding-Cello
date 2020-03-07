@@ -353,6 +353,11 @@ header nav ul > li:nth-child(3) {
     transform:translate(-50%,-50%);
     color:#fff;
     font-size:.9rem;
+    word-break:keep-all;
+    display:block;
+    width:100%;
+    text-align:center;
+    font-weight:700;
 }
 
 /*offering*/
@@ -510,6 +515,15 @@ figcaption{
     justify-content: center;
 }
 
+.con4 .alignc li{
+    margin:0 1.5rem;
+}
+
+.con4 .alignc li img{
+    width:4.8rem;
+    height:4.8rem;
+}
+
 .con5 .alignc li{
     flex:1;
 }
@@ -519,6 +533,10 @@ figcaption{
     margin: 0 2rem;
     border-left:1px solid #ddd;
     border-right:1px solid #ddd;
+}
+
+.con5 .alignc li:hover a{
+    text-decoration: underline;
 }
 
 .con5 .alignc h3{
@@ -532,9 +550,9 @@ figcaption{
     display:block;
     width:15.9rem;
     font-size:1rem;
-    letter-spacing:1px;
-    font-weight: 900;
+    font-weight: 600;
     word-break:keep-all;
+    color:#000;
 }
 
 .con5 .alignc p:last-child{
@@ -654,7 +672,7 @@ footer{
     padding:20px 0;
     background: #353736;
     font-size:.65rem;
-    height:6rem;
+    height:5rem;
 }
 
 footer a{
@@ -728,6 +746,8 @@ footer .address{
 }
 
 footer small{
+    display:inline-block;
+    margin-top:20px;
     font-size:.65rem;
     color:#555;
 }
