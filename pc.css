@@ -25,6 +25,7 @@ header {
     height:140px;
     box-sizing:border-box;
     background:#fff;
+    border-bottom:1px solid #ddd;
 }
 
 .inner {
@@ -194,15 +195,15 @@ header nav ul > li:nth-child(3) {
 }/*이미지 화면 가운데 넣기 위해 50% 넣었음.*/
 
 .fb .txt{
-    width:57.5rem;/*width:1150px;*/
+    width:57.5rem;
 }
 
 .sb .txt{
-    width:36.5rem;/*width:730px;*/
+    width:36.5rem;
 }
 
 .thb .txt{
-    width:36.5rem;/*width:730px;*/
+    width:36.5rem;
 }
 /** txt 같이 움직이게 하기 위해서 txt에 inner 추가함*/
 .txt{
@@ -226,7 +227,8 @@ header nav ul > li:nth-child(3) {
 
 
 .txt > a{
-    display:block;width:5.5rem;
+    display:block;
+    width:5.5rem;
     height:1.5rem;
     border:1px solid #fff;
     border-radius:1.25rem;
@@ -274,14 +276,12 @@ header nav ul > li:nth-child(3) {
 }
 
 .play a:before{
-    opacity: 0;
     content:"";
     display:inline-block;
     width:12px;
     height:15px;
     background:url(images/icon_play.png) no-repeat 0 0;
     position:relative;
-    left:-17px;
 }
 
 .arr_btn li{
