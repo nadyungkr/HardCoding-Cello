@@ -19,7 +19,7 @@ a {
 
 /*layout*/
 header {
-    z-index:90;
+    z-index:91;
     position: fixed;
     width:100%;
     height:140px;
@@ -31,6 +31,10 @@ header {
 .inner {
     width:1200px;
     margin:0 auto;/*width:1200px 1200/20= 60rem; */
+}
+
+header > .inner{
+    width:1240px;
 }
 
 main {
@@ -49,6 +53,7 @@ footer{
 
 .logo{
     position: absolute;
+    z-index:92;
     top:55%;
     left:50%;
     transform:translate(-55%,-50%);
@@ -59,26 +64,107 @@ footer{
     height:1.75rem;
 }
 
-header nav{
-    position: absolute;
-    top:62%;
-    transform:translateY(-62%);
+header nav.hd{
+    width:1240px;
+    height:140px;
+}
+
+.gnb{
+    overflow:hidden;
+}
+
+ul.gnb:hover{
+    overflow:visible;
 }
 
 .gnb > li {
-    display:inline-block;
-    width:160px;
-    text-align:center;
+    position: relative;
+    float:left;
+    width:180px;
+    height:140px;
+    line-height:170px;
+    color:#fff;
+}
+
+.gnb > li:before{
+    content:"";
+    position: absolute;
+    right:0;
+    bottom:-3px;
+    width:180px;
+    height:5px;
+    background:#0f5431;
+    z-index:93;
+    opacity:0;
+}
+
+.gnb > li:hover::before{
+    opacity: 1;
+}
+
+.gnb > li:hover ul{
+    background:#eff4f2;
 }
 
 .gnb > li > a{
     display:block;
+    width:100%;
+    height:100%;
     font-size:.9rem;
     font-weight:700;
+    text-indent:15px;
 }
 
-header nav ul > li:nth-child(3) {
-    margin-right:200px;
+.gnb > li:nth-child(3) {
+    margin-right:160px;
+}
+
+.dim{
+    position: absolute;
+    z-index:89;
+    top:140px;
+    left:0;
+    width:100%;
+    background:#fff;
+    opacity:0;
+    border:1px solid #ddd;
+}
+
+.gnb > li > ul{
+    position: absolute;
+    z-index:92;
+    text-align:left;
+    font-size:.75rem;
+    top:140px;
+    color:#444;
+    height:382px;
+    width:180px;
+    line-height:.75rem;
+    padding:0 15px;
+    box-sizing:border-box;
+}
+
+header nav:hover + div.dim{
+    height:383px;
+    opacity:1;
+}
+
+.gnb > li > ul > li{
+    margin-top:30px;
+}
+
+.gnb > li > ul > li:first-child{
+    margin-top:20px;
+}
+
+
+.gnb > li > ul > li > ul{
+    font-size:.65rem;
+    color:#888;
+}
+
+.gnb > li > ul > li > ul > li{
+    margin-top:12px;
 }
 
 /*탑메뉴*/
@@ -152,8 +238,12 @@ header nav ul > li:nth-child(3) {
     text-align: center;
 }
 
+.lang a:first-child{
+    margin-bottom:10px;
+}
+
 .lang_sel:hover .lang{
-    height:200%;
+    height:160%;
 }
 
 .contact14 a{
@@ -179,7 +269,6 @@ header nav ul > li:nth-child(3) {
     width:33.333%;
     float:left;
     height:720px;
-    background-size:cover;
 }
 
 .fb{
@@ -192,7 +281,7 @@ header nav ul > li:nth-child(3) {
 
 .thb{
     background:url(images/img_mainVisual3.png)no-repeat 50% 0;
-}/*이미지 화면 가운데 넣기 위해 50% 넣었음.*/
+}
 
 .fb .txt{
     width:57.5rem;
@@ -304,7 +393,7 @@ header nav ul > li:nth-child(3) {
 
 /*content*/
 .con{
-    padding:4.5rem 0;
+    padding:3.5rem 0;
 }
 
 .con1{

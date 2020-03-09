@@ -15,22 +15,83 @@
         <a href="#gnb">주메뉴바로가기</a>
     </div>
     <header>
-        <div class="inner">
-            <h1 class="logo"><a href="#"><img src="images/icon_logo.png" alt="cello"></a></h1>
-            <p class="tb_allMenu tb"><span class="blind">전체메뉴 보기</span></p>
-            <!--pc버전 -->
-            <h2 class="blind">주메뉴</h2>
-            <nav class="pc">
-                <ul class="gnb inner" id="gnb">
-                    <li><a href="#">Cello BPO</a></li>
-                    <li><a href="#">Cello Square</a></li>
-                    <li><a href="#">Cello Plus</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Newletter</a></li>
-                    <li><a href="#">Press Room</a></li>
-                </ul>
-            </nav>
-        </div><!--inner-->
+        <h1 class="logo"><a href="#"><img src="images/icon_logo.png" alt="cello"></a></h1>
+        <p class="tb_allMenu tb"><span class="blind">전체메뉴 보기</span></p>
+        <!--pc버전 -->
+        <h2 class="blind">주메뉴</h2>
+        <nav class="pc inner" id="gnb">
+            <ul class="gnb">
+                <li><a href="#">Cello BPO</a>
+                    <ul class="pc">
+                        <li>Overview
+                            <ul>
+                                <li>Service Overview</li>
+                                <li>Global Network</li>
+                                <li>Global Control Center</li>
+                            </ul>
+                        </li>
+                        <li>Industries</li>
+                        <li>Services</li>
+                        <li>Specialized Services</li>
+                    </ul>
+                </li>
+                <li><a href="#">Cello Square</a>
+                    <ul class="pc">
+                        <li>Overview
+                            <ul>
+                                <li>Service Overview</li>
+                                <li>Value Proposition</li>
+                            </ul>
+                        </li>
+                        <li>Offerings
+                            <ul>
+                                <li>Features</li>
+                                <li>References</li>
+                            </ul>
+                        </li>
+                        <li>Shipping</li>
+                    </ul>
+                </li>
+                <li><a href="#">Cello Plus</a>
+                    <ul class="pc">
+                        <li>Overview
+                            <ul>
+                                <li>Service Overview</li>
+                            </ul>
+                        </li>
+                        <li>Offerings
+                            <ul>
+                                <li>Supply Chain Planning</li>
+                                <li>Freight Forwarding</li>
+                                <li>Contract Logistics</li>
+                                <li>e-Commerce Logistics</li>
+                                <li>Premium Logistics</li>
+                            </ul>
+                        </li>
+                        <li>Specialized Services</li>
+                    </ul>
+                </li>
+                <li><a href="#">About Us</a>
+                    <ul class="pc">
+                        <li>Our Story</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </li>
+                <li><a href="#">Newletter</a>
+                    <ul class="pc">
+                        <li>e4L Newsletter</li>
+                        <li>i4L White Paper</li>
+                    </ul>
+                </li>
+                <li><a href="#">Press Room</a>
+                    <ul class="pc">
+                        <li>News</li>
+                        <li>Events</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="dim"></div>
         <div class="topMenu pc">
             <div class="inner">
                 <ul>
@@ -50,10 +111,10 @@
         </div><!--//topmenu-->
         <!--전체메뉴 클릭시 나오는 메뉴-->      
         <div class="modal">
-            <h1 class="tb_logo"><a href="index.html"><img src="images/img_logo2.png" alt="cello"></a></h1>
+            <h1 class="tb_logo"><a href="#"><img src="images/img_logo2.png" alt="cello"></a></h1>
             <h2 class="blind">주메뉴</h2>
-            <nav>
-                <ul class="gnb inner" >
+            <nav id="gnb">
+                <ul class="inner">
                     <li><a href="#">Cello BPO <span>더보기</span></a></li>
                     <li><a href="#">Cello Square</a></li>
                     <li><a href="#">Cello Plus</a></li>
