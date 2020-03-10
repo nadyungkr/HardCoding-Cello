@@ -5,7 +5,7 @@ function dropDown() {
     } else {
       x.style.display = 'block';
     }
-}
+};
 
 function dropTopDown() {
     var y = document.getElementById('lang');
@@ -14,4 +14,4 @@ function dropTopDown() {
     } else {
       y.style.height = '0px';
     }
-}
+};
