@@ -741,15 +741,14 @@ footer ul{
     font-size:.875rem;
 }
 
-.dropdown a{
+.dropdown p{
     border:1px solid #555;
-    display: block;
     width:100%;
     text-indent:10px;
     padding:.4rem;
 }
 
-.dropdown a:nth-child(2){
+#dropSub{
     display:none;
 }
 
