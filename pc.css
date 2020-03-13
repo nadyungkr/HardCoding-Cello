@@ -596,6 +596,7 @@ figcaption{
     height:18px;
     vertical-align: middle;
 }
+
 .con3 .all li:hover a{
     background: #0f5431;
     color:#fff;
@@ -607,7 +608,7 @@ figcaption{
 
 /*sns*/
 .con4{
-    background:url(images/bg_mConnect1.jpg)no-repeat center fixed;
+    background:url(images/bg_mConnect1.jpg) 50% 50% no-repeat;
 }
 
 .alignc{
